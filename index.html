@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.tailblocks.cc/1.4.0/tailblocks.min.css" rel="stylesheet">
+  <style>
+    /* Additional custom styles */
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+  <div class="container">
+    <a href="#" class="navbar-brand text-xl font-bold text-gray-800">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle menu">
+      <span id="menuIcon" class="navbar-toggler-icon"></span>
+      <span id="closeIcon" class="d-none navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-blue-600 to-purple-600 py-32">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl lg:text-6xl text-white font-bold mb-8">Welcome to My Portfolio</h1>
+      <p class="text-xl text-white">I'm a passionate web developer.</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">About Me</h2>
+      <div class="flex flex-wrap justify-center">
+        <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+          <div class="p-8 bg-gray-200 rounded-lg h-full">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Skills</h3>
+            <ul class="list-disc pl-4">
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+          <div class="p-8 bg-gray-200 rounded-lg h-full">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor interdum magna nec tempus.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+          <div class="p-8 bg-gray-200 rounded-lg h-full">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Education</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor interdum magna nec tempus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow">
+          <img src="project1.jpg" alt="Project 1" class="w-full h-64 object-cover rounded-t-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor interdum magna nec tempus.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow">
+          <img src="project2.jpg" alt="Project 2" class="w-full h-64 object-cover rounded-t-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor interdum magna nec tempus.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow">
+          <img src="project3.jpg" alt="Project 3" class="w-full h-64 object-cover rounded-t-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Project 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor interdum magna nec tempus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Contact Me</h2>
+      <div class="max-w-md mx-auto">
+        <form id="contactForm">
+          <div class="mb-4">
+            <label for="name" class="text-gray-800">Name:</label>
+            <input type="text" id="name" name="name"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="text-gray-800">Email:</label>
+            <input type="email" id="email" name="email"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="text-gray-800">Message:</label>
+            <textarea id="message" name="message"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="button"
+              class="py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700" onclick="sendEmail()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-8">
+    <div class="container mx-auto px-4 text-center text-white">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      <div class="flex items-center justify-center mt-4">
+        <a href="#" class="text-gray-400 hover:text-white mr-4"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white mr-4"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white mr-4"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://cdn.tailblocks.cc/js/main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    
+      const toggleButton = document.getElementById("toggleMenu");
+      const menuIcon = document.getElementById("menuIcon");
+      const closeIcon = document.getElementById("closeIcon");
+    
+      toggleButton.addEventListener("click", function () {
+        menuIcon.classList.toggle("d-none");
+        closeIcon.classList.toggle("d-none");
+      });
+   
+    
+ 
+  
+
+  
+
+   
+    // Send email using SMTPJS
+    function sendEmail() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+     const message = document.getElementById("message").value;
+
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "getinformationformyweb@gmail.com", // Enter your email address
+        Password: "BFF9A90EA67B22C6A77A38DD238932017DC9", // Enter your email password
+        To: "getinformationformyweb@gmail.com", // Enter the recipient email address
+        From: "getinformationformyweb@gmail.com",
+        Subject: "Contact Form Submission",
+        Body: "Name: " + name + "<br>Email: " + email + "<br>Message: " + message,
+      }).then(function (message) {
+        if (message === "OK") {
+          alert("Your message has been sent successfully.");
+          document.getElementById("contactForm").reset();
+        } else {
+          alert("Oops! Something went wrong. Please try again later.");
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>

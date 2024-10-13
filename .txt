@@ -1,0 +1,36 @@
+<!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://cdn.tailblocks.cc/js/main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    // Toggle mobile menu
+    document.querySelector(".navbar button").addEventListener("click", function () {
+      document.querySelector(".navbar ul").classList.toggle("hidden");
+      this.classList.toggle("active");
+    });
+
+   
+    // Send email using SMTPJS
+    function sendEmail() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+     const message = document.getElementById("message").value;
+
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "getinformationformyweb@gmail.com", // Enter your email address
+        Password: "BFF9A90EA67B22C6A77A38DD238932017DC9", // Enter your email password
+        To: "getinformationformyweb@gmail.com", // Enter the recipient email address
+        From: "getinformationformyweb@gmail.com",
+        Subject: "Contact Form Submission",
+        Body: "Name: " + name + "<br>Email: " + email + "<br>Message: " + message,
+      }).then(function (message) {
+        if (message === "OK") {
+          alert("Your message has been sent successfully.");
+          document.getElementById("contactForm").reset();
+        } else {
+          alert("Oops! Something went wrong. Please try again later.");
+        }
+      });
+    }
+  </script>
